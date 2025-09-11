@@ -3,6 +3,7 @@ body{
       margin: 0;
       background-color: #000;
       overflow: hidden;
+      color: #fff;
 }
 
 .main{
@@ -21,6 +22,7 @@ body{
     flex: 1;
     overflow:auto;
     border-radius: 1rem;
+    padding: 0 1.5rem 0 1.5rem;
 }
 .music-player{
     background:yellow;
@@ -122,20 +124,71 @@ margin-top: 0.5rem;
     padding: 0.25rem 1rem;
     font-weight: 700;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0px;
     margin-left: 0rem;
     width: fit-content;
+    height:2rem
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
 }
 .lib-box{
     margin-top: 2rem;
+}
+.lib-box .badge{
+    margin-top:1rem;
 }
 .badge~i{
     color:white;
 }
 .sticky-nav{
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
     position: sticky;
     width:100%;
     top:0;
+    align-items: center;
+    margin-top: 1rem;
+}
+.sticky-nav-icons{
+    margin-left: 0.7rem;
+}
+.sticky-nav-options{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav-item{
+    margin-right:1.5rem ;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+width: 200px;
+border-radius: 0.5rem;
+padding: 10px;
+margin-left: 1.5rem;
+margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card-title{
+    font-weight:600;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
 }
